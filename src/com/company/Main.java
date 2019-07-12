@@ -11,7 +11,7 @@ public class Main {
 
             Method m = dummy.getClass().getMethod("printStory");
             MyCustomAnotation myCustomAnotation = m.getAnnotation(MyCustomAnotation.class);
-            System.out.println("My annotation variables are: " + myCustomAnotation.name() + " " + myCustomAnotation.purpose());
+            System.out.println("My annotation variables are: \n" + myCustomAnotation.name() + " \n" + myCustomAnotation.purpose());
 
         }catch (NoSuchMethodException e){
 
